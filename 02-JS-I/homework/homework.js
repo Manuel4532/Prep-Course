@@ -21,7 +21,7 @@ const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 1.05;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -66,7 +66,7 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (x === y) {return true;} else {return false;}
-}n
+}
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
@@ -99,7 +99,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num===par) {return true} else{return false}
+  if(num % 2===0) {return true} else{return false}
 }
 
 function esImpar(num) {
@@ -151,21 +151,21 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(num===0) {return "Es false";} else if (numero > 0)  {return "Es positivo";} else {return "Es negativo";}
+  if(numero===0) {return false;} else if(numero > 0)  {return "Es positivo";} else {return "Es negativo";}
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return ('!')
+  return str + '!';
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinado = nombre + '' + apellido
+  var combinado = nombre + ' ' + apellido
   return (combinado)
 }
 
@@ -173,7 +173,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'hola' + nombre + '!';
+  return 'Hola '  + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -193,7 +193,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-return {base * altura}/2
+return (base * altura)/2
 }
 
 
@@ -212,12 +212,12 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if(letra.length>1){
-    return "dato incorrecto"
+    return "Dato incorrecto"
   }
   if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra ==="u"){
-    return "es vocal"
+    return "Es vocal"
   } 
-  return "dato incorrecto"
+  return "Dato incorrecto"
   
 }
 
